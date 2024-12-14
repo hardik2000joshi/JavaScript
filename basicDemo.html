@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1 class="abc" style="color: brown">I am HTML Element</h1>
+    <h1 style="background-color: yellow">I am Second Element</h1>
+    <button class="abc" onclick="process()">submit</button>
+    <button onclick="check()">check</button>
+    <button class="abc def" style="background-color: yellow">submit</button>
+    <script>
+        function process(){
+            titleObj=document.getElementsByClassName("abc def") 
+            console.log(titleObj);
+            titleObj[0].style.color="blue" 
+            titleObj[1].textContent="I am a JS Element"
+            titleObj[1].style.backgroundColor="yellow"
+            titleObj[1].classList.add("def")
+        } 
+        function check(){
+            objArray=document.getElementsByClassName("abc")
+            alert(titleObj[0].style.color) 
+        }
+    </script>
+</body>
+</html> 
